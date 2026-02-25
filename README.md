@@ -1,5 +1,3 @@
-# Rahmani_travail_final
-
 # Travail final: Brainbeats: Classifying Music Genre with fMRI Connectivity
 
 ## Description du projet:
