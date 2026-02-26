@@ -39,7 +39,7 @@ Ce projet correspond directement à mes intérêts de recherche, qui portent sur
    * Adapter le notebook d’analyse (prétraitement basé sur l’atlas Schaefer, extraction de connectivité ROI‑ROI, PCA, classification par Random Forest) pour qu’il s’applique à l’ensemble des cinq participants (sub-001 à sub-005)
    * Génération et comparaison des matrices de confusion par sujet pour explorer les confusions de genres les plus fréquentes, ainsi qu’une matrice de confusion moyenne sur l’ensemble des sujets.
      
-- Tâche 3: Intégration des données prétraité voxel-wise (.npy)
+- Tâche 3: Intégration des données prétraité voxel-wise (.npy).
   En plus des données brutes, des matrices voxel-wise prétraitées sont disponibles au format .npy. Je vais:
   * Adapter le notebook de l'étudiant pour analyser les données pré traités de tous les participants
   * Comparer les matrices générées avec celles obtenues via le notebook basé sur les données brutes (OpenNeuro)
