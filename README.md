@@ -15,23 +15,24 @@ Ce projet correspond directement à mes intérêts de recherche, qui portent sur
 ## Les tâches que j'ai décidé de réaliser
 
 - Tâche 1: Reproductibilité complète du notebook
-   * Exécution complète du notebook original à partir d'un notebook vierge
-   * Identification et documentation des erreurs ou incompatibilités
-   * Vérification de la cohérence des résultats obtenus avec ceux rapportés par l'étudiant
-   * Création et automatisation d'un environnement virtuel (requirements.txt)
+   * Exécution complète des notebook originax brainbeats_analysis_pca_confmat.ipynb et brainbeats_visualization.ipynb à partir d'un notebook vierge
+   * Identification et documentation des erreurs ou incompatibilités (versions de librairies, chemins de fichiers, dépendances manquantes)
+   * Vérification de la cohérence des résultats (matrices de connectivité, PCA, matrices de confusion) obtenus avec ceux rapportés par l'étudiant
+   * Création d'un environnement virtuel adapté au projet (requirements.txt)
+   * Automatiser les deux notebook
 
 - Tâche 2: Extension multi-sujets
-  L’analyse initiale portait uniquement sur le participant sub-005.
-
-  Je vais adapter le notebook afin d’appliquer l'analyse aux cinq participants (sub-001 à sub-005).
+  L’analyse initiale portait uniquement sur le participant sub-005. Je vais adapter le notebook afin d’appliquer l'analyse aux cinq participants (sub-001 à sub-005).
 
   Cette tâche comprend :
-   * Vérifier si les fichier event files sont complètes et que l'analyse peut être fait sur tous les sujets
-   * Identification des incohérences éventuelles entre sujets
+   * Vérifié pour chaque sujet la présence et la cohérence des fichiers BOLD (*_bold.nii) et des fichiers d’events (*_events.tsv), en documentant les runs manquants, les essais invalides ou les incohérences de structure
+   * Combiné tous les fichiers events.tsv des sujets dans un tableau global, vérifié la présence des colonnes essentielles (subject, onset,	duration,	genre, track, start, end), documenté le nombre d’essais par sujet et inspecté les genres présents, afin d’identifier d’éventuels problèmes d’incohérence entre sujets
+   * Adapté le notebook d’analyse (prétraitement basé sur l’atlas Schaefer, extraction de connectivité ROI‑ROI, PCA, classification par Random Forest) pour qu’il s’applique à l’ensemble des cinq participants (sub-001 à sub-005)
+   * Génération et comparaison des matrices de confusion par sujet pour explorer les confusions de genres les plus fréquentes, ainsi qu’une matrice de confusion moyenne sur l’ensemble des sujets.
      
 - Tâche 3: Intégration des données prétraité voxel-wise (.npy)
   En plus des données brutes, des matrices voxel-wise prétraitées sont disponibles au format .npy. Je vais:
   * Adapter le notebook de l'étudiant pour analyser les données pré traités de tous les participants
-  * Comparer les matrices générées avec celles obtenues via le pipeline basé sur les données brutes
-  * Vérifier la cohérence des résultats avec ceux rapportés dans les travaux publiés
-  * Documenter les différences potentielles liées au preprocessing
+  * Comparer les matrices générées avec celles obtenues via le notebook basé sur les données brutes (OpenNeuro)
+  * Vérifier la cohérence des résultats avec ceux rapportés dans l'article publié
+  * Documenter les différences potentielles liées au prétraitement
