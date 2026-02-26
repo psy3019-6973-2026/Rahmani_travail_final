@@ -25,9 +25,9 @@ Ce projet correspond directement à mes intérêts de recherche, qui portent sur
   L’analyse initiale portait uniquement sur le participant sub-005. Je vais adapter le notebook afin d’appliquer l'analyse aux cinq participants (sub-001 à sub-005).
 
   Cette tâche comprend :
-   * Vérifié pour chaque sujet la présence et la cohérence des fichiers BOLD (*_bold.nii) et des fichiers d’events (*_events.tsv), en documentant les runs manquants, les essais invalides ou les incohérences de structure
-   * Combiné tous les fichiers events.tsv des sujets dans un tableau global, vérifié la présence des colonnes essentielles (subject, onset,	duration,	genre, track, start, end), documenté le nombre d’essais par sujet et inspecté les genres présents, afin d’identifier d’éventuels problèmes d’incohérence entre sujets
-   * Adapté le notebook d’analyse (prétraitement basé sur l’atlas Schaefer, extraction de connectivité ROI‑ROI, PCA, classification par Random Forest) pour qu’il s’applique à l’ensemble des cinq participants (sub-001 à sub-005)
+   * Vérifier pour chaque sujet la présence et la cohérence des fichiers BOLD (*_bold.nii) et des fichiers d’events (*_events.tsv), en documentant les runs manquants, les essais invalides ou les incohérences de structure
+   * Combiner tous les fichiers events.tsv des sujets dans un tableau global, vérifié la présence des colonnes essentielles (subject, onset,	duration,	genre, track, start, end), documenté le nombre d’essais par sujet et inspecté les genres présents, afin d’identifier d’éventuels problèmes d’incohérence entre sujets
+   * Adapter le notebook d’analyse (prétraitement basé sur l’atlas Schaefer, extraction de connectivité ROI‑ROI, PCA, classification par Random Forest) pour qu’il s’applique à l’ensemble des cinq participants (sub-001 à sub-005)
    * Génération et comparaison des matrices de confusion par sujet pour explorer les confusions de genres les plus fréquentes, ainsi qu’une matrice de confusion moyenne sur l’ensemble des sujets.
      
 - Tâche 3: Intégration des données prétraité voxel-wise (.npy)
