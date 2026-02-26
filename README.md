@@ -4,9 +4,18 @@
 
 Ce projet s’inscrit dans la continuité du travail réalisé à partir du dataset Music Genre Neuroimaging Dataset (OpenNeuro ds003720).
 
-Cette étude vise à comprendre comment le cerveau humain représente différentes catégories musicales lors de l’écoute passive de musique. Les données ont été acquises par IRMf chez cinq participants ayant écouté 540 extraits musicaux appartenant à 10 genres distincts (blues, classique, country, disco, hiphop, jazz, metal, pop, reggae, rock).
+Cette étude cherche à comprendre comment le cerveau code les genres musicaux pendant une simple écoute, sans tâche. Cinq participants ont écouté 540 extraits de 10 genres (blues, classical, country, disco, hiphop, jazz, metal, pop, reggae, rock) pendant l’IRMf.​
 
-Les travaux des chercheurs (Nakai, Koide-Majima, and Nishimoto (2021)) suggèrent que des régions auditives, notamment le cortex temporal supérieur (STG), jouent un rôle clé dans la représentation des genres musicaux. L’objectif général est d’examiner dans quelle mesure l’activité cérébrale permet de prédire le genre musical écouté à l’aide de méthodes d’apprentissage automatique.
+Les auteurs montrent que certaines régions auditives, surtout le gyrus temporal supérieur latéral (LSTG) et le sulcus de Heschl (HS), répondent différemment selon le genre, ce qui forme une sorte de “carte” des genres dans le cortex auditif. Par exemple, les patterns d’activation pour classical et jazz se ressemblent, tout comme ceux pour rock et metal, alors que d’autres genres comme blues ou hiphop sont plus distincts.
+<img width="417" height="353" alt="image" src="https://github.com/user-attachments/assets/5bc18ad5-0cbd-4140-8526-79807e211678" />
+
+Ils ont aussi utilisé un modèle appelé modulation-transfer function (MTF): ce modèle décrit chaque extrait musical en termes de “textures sonores”, c’est‑à‑dire comment l’énergie du son fluctue dans le temps (modulations rapides ou lentes, liées au rythme) et en fréquence (modulations fines ou grossières, liées au timbre). Ils ont trouvé que le modèle MTF prédit bien quel voxel est sensible aux modulations acoustiques typiques de ce genre.
+
+<img width="400" height="400" alt="Image article" src="https://github.com/user-attachments/assets/da89a23d-c120-4557-93a2-4a46ea193bee" />
+
+L’étudiant ayant repris le projet a également observé, à partir de sa matrice de confusion, que certains genres ressortaient davantage que d’autres. Il a utilisé un modèle différent de celui de Nakai et al., basé sur un atlas Schaefer 100 ROI, des matrices de connectivité ROI‑ROI et un classifieur Random Forest, pour étudier la structure de connectivité cérébrale associée aux genres musicaux.
+<img width="400" height="400" alt="Image étudiant" src="https://github.com/user-attachments/assets/91ce8a12-2f8c-4b86-af11-12103fc7510f" />
+
 
 ## Pourquoi j'ai choisi ce projet?
 
@@ -36,3 +45,4 @@ Ce projet correspond directement à mes intérêts de recherche, qui portent sur
   * Comparer les matrices générées avec celles obtenues via le notebook basé sur les données brutes (OpenNeuro)
   * Vérifier la cohérence des résultats avec ceux rapportés dans l'article publié
   * Documenter les différences potentielles liées au prétraitement
+
