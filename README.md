@@ -27,7 +27,7 @@ Ce projet correspond directement à mes intérêts de recherche, qui portent sur
    * Exécution complète des notebook originax brainbeats_analysis_pca_confmat.ipynb et brainbeats_visualization.ipynb à partir d'un notebook vierge
    * Identification et documentation des erreurs ou incompatibilités (versions de librairies, chemins de fichiers, dépendances manquantes)
    * Vérification de la cohérence des résultats (matrices de connectivité, PCA, matrices de confusion) obtenus avec ceux rapportés par l'étudiant
-   * Création d'un environnement virtuel adapté au projet (requirements.txt)
+   * Création d'un environnement virtuel adapté au projet (environment.yml)
    * Automatiser les deux notebook
 
 - Tâche 2: Extension multi-sujets
