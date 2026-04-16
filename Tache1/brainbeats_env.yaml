@@ -1,0 +1,12 @@
+name: brainbeats-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - nilearn
+  - dipy
+  - mne
+  - jupyter
+  - git-annex
+  - datalad
+  - pybids
