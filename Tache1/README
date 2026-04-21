@@ -1,6 +1,9 @@
+Le script pour ce travail a été reproduit par le script de l'étudiant
+
 Pour télécharger les données brutes il faut faire:
 
 conda activate project-env
 datalad clone https://github.com/OpenNeuroDatasets/ds003720.git source_data/ds003720
 cd source_data/ds003720
 datalad get .
+
