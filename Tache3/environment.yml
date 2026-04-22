@@ -1,0 +1,17 @@
+name: brainbeats_pre
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - requests
+  - invoke
+  - pip
+  - pip:
+      - airoh
+  - nilearn
+  - dipy
+  - mne
+  - jupyter
+  - git-annex
+  - datalad
+  - pybids
