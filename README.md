@@ -47,5 +47,5 @@ Ce projet correspond directement à mes intérêts de recherche, qui portent sur
   * Automatiser le notebook
   * Vérifier la cohérence des résultats avec ceux rapportés dans l'article publié
   * Documenter les différences potentielles liées au prétraitement
-  * Automatiser les notebook
+
 
