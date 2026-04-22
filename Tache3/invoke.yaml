@@ -1,0 +1,21 @@
+# invoke.yaml
+docker_image: Tache_3
+
+# Code folder
+code_dir: code
+
+# Notebooks folders
+notebooks_dir: notebooks
+
+# source data folders
+source_data_dir: source_data
+
+# output data folders
+output_data_dir: output_data
+
+
+# file sources
+files:
+  papers:
+    url: https://zenodo.org/api/records/8275363
+    output_file: source_data/Brainbeats_pre
