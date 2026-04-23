@@ -6,6 +6,13 @@ La matrice de confusion montre néanmoins que le modèle ne parvient pas à iden
 
 Dans la tâche 2, le modèle a été entraîné sur les données d’entraînement de l’ensemble des participants, puis évalué sur des données de test indépendantes. Les résultats montrent une exactitude globale de 10,8 %, avec des variations interindividuelles allant de 7 % à 12 % (sub-001 : 7,3 %, sub-002 : 10,2 %, sub-003 : 12,2 %, sub-004 : 7,9 % et sub-005 : 7,9 %).
 
+<img width="1135" height="1157" alt="cm_sub-001" src="https://github.com/user-attachments/assets/4ab80d88-22ba-4889-a131-f6fc648d7986" />
+<img width="1115" height="1157" alt="cm_sub-002" src="https://github.com/user-attachments/assets/a83a8ae5-10af-4d74-bbb6-122f53a267c8" />
+<img width="1135" height="1157" alt="cm_sub-003" src="https://github.com/user-attachments/assets/b19fa1ef-c344-48ac-bb8a-79cbc2c7abbf" />
+<img width="1115" height="1157" alt="cm_sub-004" src="https://github.com/user-attachments/assets/2ece4bc8-4ad8-49df-9f3b-6744df23326c" />
+<img width="1115" height="1157" alt="cm_sub-005" src="https://github.com/user-attachments/assets/79791713-b4f0-42e6-98bf-b1444b888b2d" />
+
+
 Ces performances, proches du hasard, confiment que les patterns d’activation extraits via l’atlas de Schaefer ne contiennent pas suffisamment d’information discriminante pour permettre au modèle de différencier les genres musicaux. Cela pourrait s’expliquer par le fait que cet atlas, bien adapté à l’étude de réseaux fonctionnels à grande échelle, manque de résolution ou de spécificité dans les régions auditives fines (par exemple, le gyrus inférieur temporal et le gyrus temporal supérieur), qui sont cruciales pour le traitement des caractéristiques musicales.
 
 Dans la tâche 3, l’utilisation de données prétraitées n’a pas permis d’améliorer l’exactitude globale (toujours 10,8 %), bien que certaines améliorations individuelles soient observées (sub-001 : 14,6 %, sub-002 : 12,1 %). Cette légère amélioration suggère que le prétraitement peut renforcer certains signaux individuels, mais qu’il ne compense pas les limites liées à la représentation des données elle-même. Le problème ne semble pas uniquement lié au bruit ou à la qualité des données, mais plutôt à la pertinence des régions définies par l’atlas pour la tâche étudiée.
