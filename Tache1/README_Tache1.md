@@ -1,6 +1,6 @@
 Analyse inspirée du script de Xuan Chen (CC0 1.0-  Creative Commons Zero v1.0 Universal) Utilisation commerciale autorisée, Modification libre, Distribution sans restriction, Utilisation privée
-Données : Nakai et al. (2023), OpenNeuro ds003720
-Pipeline : airoh-pipeline/airoh-template
+Données : Nakai, Koide-Majima, and Nishimoto (2022). Music genre neuroimaging dataset. Data in Brief. 40, 107675. https://doi.org/10.1016/j.dib.2021.107675
+
 
 Télécharger les données brutes:
 
