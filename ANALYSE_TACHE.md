@@ -2,6 +2,9 @@
 
 Pour la tâche 1, le modèle a été construit en utilisant les données de test du participant #5 à la fois comme données d’entraînement et comme données de test. Cette approche ne permet pas une évaluation valide de la capacité de généralisation du modèle. Même si le Random Forest est relativement robuste au surapprentissage, ce type de biais compromet fortement l’interprétation des performances.
 
+<img width="738" height="748" alt="pca_confmax" src="https://github.com/user-attachments/assets/ebf66ec3-63fc-4b16-9758-5ea6e0061740" />
+
+
 La matrice de confusion montre néanmoins que le modèle ne parvient pas à identifier des patrons discriminants entre les genres musicaux. Les confusions observées (pop–métal, métal–classique, jazz–blues) suggèrent que les signaux extraits à partir de l’atlas de Schaefer (2018) ne permettent pas de distinguer clairement les catégories. Cela peut indiquer que les régions définies par cet atlas, ne sont pas suffisamment spécifiques aux caractéristiques auditives ou musicales nécessaires pour la classification des genres.
 
 Dans la tâche 2, le modèle a été entraîné sur les données d’entraînement de l’ensemble des participants, puis évalué sur des données de test indépendantes. Les résultats montrent une exactitude globale de 10,8 %, avec des variations interindividuelles allant de 7 % à 12 % (sub-001 : 7,3 %, sub-002 : 10,2 %, sub-003 : 12,2 %, sub-004 : 7,9 % et sub-005 : 7,9 %).
