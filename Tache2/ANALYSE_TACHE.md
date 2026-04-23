@@ -1,4 +1,4 @@
-#Analyse des matrices de corrélation de la tâche 1 et 2:
+# Analyse des matrices de corrélation de la tâche 1 et 2:
 
 Pour la tâche 1, le modèle a été construit en utilisant les données de test du participant #5 à la fois comme données d’entraînement et comme données de test. En utilisant cette méthode, le modèle ne permet pas d’évaluer correctement la capacité de généralisation du modèle. En effet, entraîner et tester un modèle sur les mêmes données tend à biaiser les performances observées. Malgré cela, la matrice de confusion obtenue révèle une exactitude (accuracy) de 13 %, ce qui demeure très faible et suggère que le modèle ne parvient pas à capturer des patrons discriminants pertinents de genre dans les données.
 
