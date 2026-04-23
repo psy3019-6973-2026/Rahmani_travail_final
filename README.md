@@ -45,6 +45,9 @@ Ce projet correspond directement à mes intérêts de recherche, qui portent sur
   * Adapter le notebook de l'étudiant pour analyser les données pré traités de tous les participants
   * Comparer les matrices générées avec celles obtenues via le notebook basé sur les données brutes (OpenNeuro)
   * Automatiser le notebook
+ 
+La réalisation des trois tâches a été assisté par l'ia (Chatgpt 5 et Perplexity pro)
+<img width="170" height="77" alt="image" src="https://github.com/user-attachments/assets/98185aa5-be64-4b19-8db4-05de6fd4f5c7" />
   * Vérifier la cohérence des résultats avec ceux rapportés dans l'article publié
   * Documenter les différences potentielles liées au prétraitement
 
