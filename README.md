@@ -22,7 +22,7 @@ L’étudiant ayant repris le projet a également observé, à partir de sa matr
 Ce projet correspond directement à mes intérêts de recherche, qui portent sur la perception musicale de différentes population (personnes ayant une dyslexie et athlètes commotionnés) et l'effet de la musique sur le cerveau
 
 ## Les tâches que j'ai décidé de réaliser
-
+---
 - Tâche 1: Reproductibilité complète du notebook
    * Exécution complète des notebook originax brainbeats_analysis_pca_confmat.ipynb et brainbeats_visualization.ipynb à partir d'un notebook vierge
    * Identification et documentation des erreurs ou incompatibilités (versions de librairies, chemins de fichiers, dépendances manquantes)
@@ -30,11 +30,14 @@ Ce projet correspond directement à mes intérêts de recherche, qui portent sur
    * Création d'un environnement virtuel adapté au projet (environment.yml)
    * Automatiser les deux notebook- Je vais finalement automatiser le notebook de la tâche 3.
  
-    Résultat :
-Aucun problème majeur de reproduction n’a été rencontré. Les figures obtenues (PCA, matrices de confusion, matrices de connectivité) sont très similaires à celles rapportées par l’étudiant, ce qui confirme la reproductibilité globale du pipeline.
+  ####  Résultat
+Aucun problème majeur de reproduction.  
+Les figures obtenues sont **très similaires** à celles de l’étudiant.
 
-    Limite identifiée :
-Le modèle utilisait les mêmes données pour l’entraînement et le test (sub-005), ce qui introduit un biais important et empêche toute évaluation valide de la généralisation.
+####  Limite identifiée
+Le modèle utilise les mêmes données pour l’entraînement et le test (sub-005), introduisant un biais important.
+
+---
 
 - Tâche 2: Extension multi-sujets
   L’analyse initiale portait uniquement sur le participant sub-005. Je vais adapter le notebook afin d’appliquer l'analyse aux cinq participants (sub-001 à sub-005).
@@ -45,16 +48,17 @@ Le modèle utilisait les mêmes données pour l’entraînement et le test (sub-
    * Adapter le notebook d’analyse (prétraitement basé sur l’atlas Schaefer, extraction de connectivité ROI‑ROI, PCA, classification par Random Forest) pour qu’il s’applique à l’ensemble des cinq participants (sub-001 à sub-005)
    * Génération et comparaison des matrices de confusion par sujet pour explorer les confusions de genres les plus fréquentes, ainsi qu’une matrice de confusion moyenne sur l’ensemble des sujets.
 
-   Résultat :
-L’extension s’est faite sans problème technique majeur. Le pipeline est maintenant fonctionnel pour plusieurs sujets.
+ ####  Résultat
+Pipeline fonctionnel pour les 5 participants.
 
-   Performance :
-
-Exactitude moyenne : 10,8 % (niveau du hasard)
-Variabilité interindividuelle : 7 % à 12 %
+####  Performance
+- Exactitude moyenne : **10,8 % (niveau du hasard)**
+- Variabilité : 7 % à 12 %
 
 Cela montre que les patterns de connectivité extraits ne permettent pas de discriminer efficacement les genres musicaux.
-     
+
+---
+
 - Tâche 3: Intégration des données prétraité voxel-wise (.npy).
   En plus des données brutes, des matrices voxel-wise prétraitées sont disponibles au format .npy. Je vais:
   * Adapter le notebook de l'étudiant pour analyser les données pré traités de tous les participants
@@ -63,23 +67,24 @@ Cela montre que les patterns de connectivité extraits ne permettent pas de disc
   * Vérifier la cohérence des résultats avec ceux rapportés dans l'article publié
   * Documenter les différences potentielles liées au prétraitement
  
-  Difficulté majeure :
-L’automatisation du notebook a demandé beaucoup de temps, notamment pour :
+ ####  Difficulté majeure
+L’automatisation du notebook a été **la partie la plus longue** :
+- gestion des chemins
+- structuration du pipeline
+- reproductibilité
 
-gérer les chemins de données
-structurer les entrées/sorties
-rendre le pipeline réutilisable sans intervention manuelle
+####  Résultat
+- Pipeline automatisé fonctionnel  
+- Résultats similaires à la tâche 2  
+- Légères améliorations individuelles  
 
-  Résultat :
+####  Conclusion
+Le prétraitement améliore légèrement le signal, mais ne règle pas le problème principal.
 
-Pipeline automatisé fonctionnel
-Résultats globalement similaires à la tâche 2
-Légère amélioration pour certains sujets (ex: sub-001)
+---
 
-  Conclusion :
-Le prétraitement améliore légèrement le signal, mais ne résout pas le problème principal lié à la représentation des données.
- 
-# Analyse des matrices de corrélation de la tâche 1, 2 et 3:
+
+## Analyse des matrices de corrélation de la tâche 1, 2 et 3:
 
 Pour la tâche 1, le modèle a été construit en utilisant les données de test du participant #5 à la fois comme données d’entraînement et comme données de test. Cette approche ne permet pas une évaluation valide de la capacité de généralisation du modèle. Même si le Random Forest est relativement robuste au surapprentissage, ce type de biais compromet fortement l’interprétation des performances.
 
@@ -106,7 +111,7 @@ Dans la tâche 3, l’utilisation de données prétraitées n’a pas permis d�
 
 Dans l’ensemble, les résultats indiquent que le modèle présente une capacité prédictive très limitée. Au-delà du choix du modèle, ces résultats mettent surtout en évidence l’importance du choix de l’atlas. L’atlas de Schaefer (2018), bien qu’optimal pour l’étude de la connectivité fonctionnelle à grande échelle, pourrait ne pas être le plus adapté pour des analyses fines liées à la perception auditive ou musicale. Il serait donc pertinent d’explorer d’autres atlas plus spécialisés dans les régions auditives (par exemple, un atlas Destrieux ou Harvard-Oxford) ou d’augmenter la résolution des données afin de mieux identifier les signaux neuronaux spécifiques aux genres musicaux.
 
-# Rôle de l’intelligence artificielle dans le projet
+## Rôle de l’intelligence artificielle dans le projet
 
 La réalisation des trois tâches a été assistée par des outils d’intelligence artificielle, notamment ChatGPT (GPT-5) et Perplexity Pro.
 
