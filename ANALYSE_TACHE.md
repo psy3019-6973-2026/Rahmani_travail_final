@@ -17,7 +17,7 @@ Ces performances, proches du hasard, confiment que les patterns d’activation e
 
 Dans la tâche 3, l’utilisation de données prétraitées n’a pas permis d’améliorer l’exactitude globale (toujours 10,8 %), bien que certaines améliorations individuelles soient observées (sub-001 : 14,6 %, sub-002 : 12,1 %). Cette légère amélioration suggère que le prétraitement peut renforcer certains signaux individuels, mais qu’il ne compense pas les limites liées à la représentation des données elle-même. Le problème ne semble pas uniquement lié au bruit ou à la qualité des données, mais plutôt à la pertinence des régions définies par l’atlas pour la tâche étudiée.
 
-
+<img width="6995" height="4717" alt="DASHBOARD_CM_GTZAN" src="https://github.com/user-attachments/assets/21e129b0-98cd-4aca-abb3-a99ed5578a07" />
 
 
 Dans l’ensemble, les résultats indiquent que le modèle présente une capacité prédictive très limitée. Au-delà du choix du modèle, ces résultats mettent surtout en évidence l’importance du choix de l’atlas. L’atlas de Schaefer (2018), bien qu’optimal pour l’étude de la connectivité fonctionnelle à grande échelle, pourrait ne pas être le plus adapté pour des analyses fines liées à la perception auditive ou musicale. Il serait donc pertinent d’explorer d’autres atlas plus spécialisés dans les régions auditives (par exemple, un atlas Destrieux ou Harvard-Oxford) ou d’augmenter la résolution des données afin de mieux identifier les signaux neuronaux spécifiques aux genres musicaux.
